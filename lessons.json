@@ -1,0 +1,170 @@
+[
+  {
+    "track": "AI Automation",
+    "title": "Workflow Basics",
+    "explain": "A workflow is a sequence of steps that turns an event into a useful result. A trigger begins the process. Actions transform or move data.",
+    "exercise": "Sketch: New inquiry → classify topic → save to sheet → request reply approval. Label the trigger and three actions.",
+    "question": "What starts an event-based automation?",
+    "answers": [
+      "A trigger",
+      "A dashboard",
+      "A database backup"
+    ],
+    "correct": 0,
+    "tag": "workflows"
+  },
+  {
+    "track": "AI Automation",
+    "title": "Triggers and Webhooks",
+    "explain": "A webhook is an HTTP endpoint that receives an event from another system. It should validate input and avoid revealing secrets.",
+    "exercise": "Write a sample JSON payload for an incoming support request with name, topic, and message. Do not use real personal data.",
+    "question": "What does a webhook typically receive?",
+    "answers": [
+      "A physical document",
+      "An HTTP request",
+      "A phone signal"
+    ],
+    "correct": 1,
+    "tag": "webhooks"
+  },
+  {
+    "track": "AI Automation",
+    "title": "Reliable Automations",
+    "explain": "Production-ready workflows need error paths, retry policies, logs, and safeguards against duplicate processing.",
+    "exercise": "Design a three-step workflow and write what happens if the second step fails.",
+    "question": "What prevents processing the same event twice?",
+    "answers": [
+      "Idempotency or deduplication",
+      "Increasing font size",
+      "Sending two emails"
+    ],
+    "correct": 0,
+    "tag": "reliability"
+  },
+  {
+    "track": "Python",
+    "title": "Python Data Types",
+    "explain": "Python uses strings, integers, floats, booleans, lists, and dictionaries. JSON objects commonly map to dictionaries.",
+    "exercise": "Create a Python dictionary containing a fictional server name, capacity_tb, and an alerts list.",
+    "question": "What type is {\"capacity_tb\": 3}?",
+    "answers": [
+      "List",
+      "Dictionary",
+      "Integer"
+    ],
+    "correct": 1,
+    "tag": "python"
+  },
+  {
+    "track": "Python",
+    "title": "Read and Summarize Logs",
+    "explain": "A useful log-analysis script reads records, extracts fields, groups counts, and flags exceptions. Protect any production log data.",
+    "exercise": "Write pseudocode to count ERROR lines in a synthetic text log and print the total.",
+    "question": "Which construct usually handles each line in a file?",
+    "answers": [
+      "for loop",
+      "CSS grid",
+      "HTML header"
+    ],
+    "correct": 0,
+    "tag": "logs"
+  },
+  {
+    "track": "PowerShell",
+    "title": "Safe File Migration",
+    "explain": "A migration script should enumerate sources, check destinations, log outcomes, and verify results before any cleanup. Test on synthetic data first.",
+    "exercise": "Write a five-item migration validation checklist, including permissions and integrity checks.",
+    "question": "What should happen before deleting source files?",
+    "answers": [
+      "Verify migrated files",
+      "Change wallpaper",
+      "Disable logging"
+    ],
+    "correct": 0,
+    "tag": "powershell"
+  },
+  {
+    "track": "APIs",
+    "title": "REST and JSON",
+    "explain": "REST APIs expose resources over HTTP. GET reads; POST often creates or triggers. Status codes help distinguish success from failure.",
+    "exercise": "Draft a GET request URL for a fictional /tickets API and describe a JSON response.",
+    "question": "What HTTP method is normally used to read a resource?",
+    "answers": [
+      "POST",
+      "DELETE",
+      "GET"
+    ],
+    "correct": 2,
+    "tag": "api"
+  },
+  {
+    "track": "LLM Apps",
+    "title": "Structured LLM Outputs",
+    "explain": "LLM applications are more reliable when they request structured output, validate fields, and handle malformed responses. Do not treat model text as trusted instructions.",
+    "exercise": "Design a JSON output with category, confidence, and summary for classifying support tickets.",
+    "question": "Why validate AI-generated JSON?",
+    "answers": [
+      "Output may be missing or malformed",
+      "It saves battery only",
+      "JSON is always correct"
+    ],
+    "correct": 0,
+    "tag": "llm"
+  },
+  {
+    "track": "LLM Apps",
+    "title": "Grounded Document Search",
+    "explain": "RAG retrieves relevant passages before generating answers. Good designs cite their sources and say when information is missing.",
+    "exercise": "Draft three acceptance tests for a document assistant, including an unknown-answer test.",
+    "question": "What should a grounded assistant do when the document lacks an answer?",
+    "answers": [
+      "Invent the answer",
+      "Say it cannot find support",
+      "Silently search private accounts"
+    ],
+    "correct": 1,
+    "tag": "rag"
+  },
+  {
+    "track": "Web Development",
+    "title": "HTML CSS JavaScript",
+    "explain": "HTML structures the page, CSS styles it, and JavaScript adds interactive behavior. All three matter for a working web app.",
+    "exercise": "Create a page with a heading, paragraph, button, and click counter on a computer.",
+    "question": "What adds click behavior to a web button?",
+    "answers": [
+      "JavaScript",
+      "HTML only",
+      "An image"
+    ],
+    "correct": 0,
+    "tag": "web"
+  },
+  {
+    "track": "Full Stack",
+    "title": "Front End and Back End",
+    "explain": "The front end renders the user interface. A back end handles application logic, APIs, and persistence; security controls must be enforced server-side.",
+    "exercise": "Draw: browser → API → database. Mark where input validation and access checks belong.",
+    "question": "Where should authorization be enforced?",
+    "answers": [
+      "Only in CSS",
+      "On the server",
+      "Only in button labels"
+    ],
+    "correct": 1,
+    "tag": "fullstack"
+  },
+  {
+    "track": "Upwork",
+    "title": "Pitch Outcomes, Not Buzzwords",
+    "explain": "A strong proposal identifies the client problem, offers a credible approach, and names a specific deliverable. Never claim work you have not completed.",
+    "exercise": "Write a 90-word proposal for a Python log reporting job using your real enterprise experience.",
+    "question": "What is the strongest opening for a proposal?",
+    "answers": [
+      "A generic autobiography",
+      "A promise of guaranteed savings",
+      "A response to the client problem"
+    ],
+    "correct": 2,
+    "tag": "upwork"
+  }
+]
